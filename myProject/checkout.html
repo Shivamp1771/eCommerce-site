@@ -1,0 +1,195 @@
+<!--  Page & Styles made by Shivam Parekh -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/checkout.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="logo">
+                        <h1><a href="./"><img src="images/logo.png" alt=""></a></h1>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="search-bar">
+                        <!--suppress HtmlFormInputWithoutLabel -->
+                        <input type="text" value="Search">
+                        <input type="submit" value="">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="header-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="dropdown dropdown-small">
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">currency :</span><span class="value">CAD </span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">CAD</a></li>
+                                    <li><a href="#">USD</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown dropdown-small">
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">language :</span><span class="value">English </span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">French</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-1 top-header-left">
+                    <div class="cart">
+                        <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <div class="row">
+                <ul class="nav">
+                    <li class="col-sm-3"><a href="index.html">Home</a></li>
+                    <li class="col-sm-3"><a href="products.html">Products</a></li>
+                    <li class="col-sm-3"><a href="account.html">Account</a></li>
+                    <li class="active col-sm-3"><a href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<section id="shop" class="outer">
+    <div class="inner">
+        <div class="content">
+            <h1 class="head-check">CHECKOUT</h1>
+            <p id="form">Please fill out the form</p>
+            <div class="form-row">
+                <div class="col-75">
+                    <div class="form-container">
+                        <form action="javascript:alert('Purchase complete');" method="post" name="purchase_form" id="purchase_form">
+
+                                <div class="col-50">
+                                    <h3 class="form-h3">Payment</h3>
+                                    <label for="fname" class="name-label">Accepted Cards</label>
+                                    <div class="icon-container">
+                                        <i><img src="./images/visa.png" alt="Visa Card Icon" width="50px" class="img1"></i>
+                                        <i><img src="./images/american-express.png" alt="American Express Card Icon" width="50px"></i>
+                                        <i><img src="./images/mastercard.png" alt="Mastercard Card Icon" width="50px"></i>
+                                        <i><img src="./images/maestro.png" alt="Maestro Card Icon" width="50px"></i>
+                                    </div>
+                                    <label for="cname">Name on Card</label>
+                                    <input type="text" id="cname" name="cardname">
+                                    <label for="ccnum">Credit card number</label>
+                                    <input type="text" id="ccnum" name="cardnumber">
+                                    <label for="expmonth">Exp Month</label>
+                                    <input type="text" id="expmonth" name="expmonth">
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="expyear">Exp Year</label>
+                                            <input type="text" id="expyear" name="expyear">
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="cvv">CVV</label>
+                                            <input type="text" id="cvv" name="cvv">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <br>
+                            <button id="purchase" class="button-cta dark">Place order</button>
+                            <!-- <button id="purchase" onclick="purchaseFunction()" class="button-cta dark">Continue to checkout</button>-->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-about-us">
+                        <h2 class="footer-wid-title">About Us </h2>
+                        <p>We provide sales in the areas of smartphones, computers, laptops, gadgets and accessories. In addition, more than 1,000 suppliers provide various IT and telecommunications needs, electronic equipment and other products. You can easily complete shopping online, and enjoy 30 days of free return service</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-nav">
+                        <h2 class="footer-wid-title">User Navigation </h2>
+                        <ul>
+                            <li><a href="#">My account</a></li>
+                            <li><a href="#">Order history</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Vendor contact</a></li>
+                            <li><a href="#">Forum page</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-nav">
+                        <h2 class="footer-wid-title">Categories</h2>
+                        <ul>
+                            <li><a href="#">Mobile Phone</a></li>
+                            <li><a href="#">Home Accessories</a></li>
+                            <li><a href="#">LED TV</a></li>
+                            <li><a href="#">Computer</a></li>
+                            <li><a href="#">Gadgets</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-newsletter">
+                        <h2 class="footer-wid-title">Newsletter</h2>
+                        <p>Use your email to subscribe our newsletter and get discount information timely!</p>
+                        <div class="newsletter-form">
+                            <form id="emailSubForm" action="#">
+                                <input type="email" id="emailSub" placeholder="Type your email"><p></p>
+                                <input type="submit" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="js/checkout.js"></script>
+<script src="js/common.js"></script>
+<script src="js/jquery.mycart.js"></script>
+<script src="js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
+</html>
